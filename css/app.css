@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #03a9f4;
+}
+
+.aone {
+  background: #182b3c;
+  padding: 40px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.aone h2 {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.aone .aone-ul {
+  position: relative;
+}
+
+.aone .aone-ul .aone-li {
+  position: relative;
+  list-style: none;
+  display: table;
+  margin: 10px 0;
+  padding-left: 34px;
+  padding-right: 5px;
+}
+
+.aone .aone-ul .aone-li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border-radius: 34px;
+  -webkit-transition: background 0.5s, width 0.5s;
+  transition: background 0.5s, width 0.5s;
+  -webkit-transition-delay: 0.5s, 0s;
+          transition-delay: 0.5s, 0s;
+  border: 2px solid #03a9f4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.aone .aone-ul .aone-li:hover::before {
+  width: 100%;
+  background: #03a9f4;
+  -webkit-transition-delay: 0s, 0.5s;
+          transition-delay: 0s, 0.5s;
+}
+
+.aone .aone-ul .aone-li::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.aone .aone-ul .aone-li:hover::after {
+  left: 24px;
+  -webkit-transform: rotate(45deg) scale(1.5);
+          transform: rotate(45deg) scale(1.5);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.aone .aone-ul .aone-li .aone-p {
+  position: relative;
+  z-index: 10;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.card {
+  background: #fff;
+  padding: 50px;
+  width: 50vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-heading {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card-footing ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.card-footing .card-ul .card-li {
+  position: relative;
+  list-style: none;
+  color: #fff;
+  background: #03a9f4;
+  margin: 1rem;
+  padding: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+}
+
+.card-footing .card-ul .card-li::before {
+  content: '';
+  -webkit-transition: background 0.5s transform 0.5s;
+  transition: background 0.5s transform 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  position: absolute;
+  -webkit-transition-delay: 0s, 0.5s;
+          transition-delay: 0s, 0.5s;
+}
+
+.card-footing .card-ul .card-li:hover {
+  cursor: pointer;
+}
+
+.card-footing .card-ul .card-li::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.card-footing .card-ul .card-li:hover::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=app.css.map */
